@@ -1,0 +1,69 @@
+{
+  "expo": {
+    "name": "flashy",
+    "description": "Just a silly flashcard app",
+    "slug": "flashy",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/images/ios-light.png",
+    "scheme": "flashy",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kakenbutter.flashy",
+      "config": {
+        "usesNonExemptEncryption": false
+      },
+      "icon": {
+        "dark": "./assets/images/ios-dark.png",
+        "light": "./assets/images/ios-light.png",
+        "tinted": "./assets/images/ios-tinted.png"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive_icon.png",
+        "backgroundColor": "#D9F6B0"
+      },
+      "icon": "./assets/images/android-icon.png",
+      "edgeToEdgeEnabled": true,
+      "package": "com.kakenbutter.flashy"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/adaptive_icon.png",
+          "imageWidth": 391,
+          "resizeMode": "native"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "deploymentProperties": 18
+          }
+        }
+      ],
+      "expo-secure-store",
+      ["expo-asset", { "assets": ["assets/images/adaptive_icon.png"] }]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "328ba3ac-e428-44f7-b083-8efad748de5e"
+      }
+    },
+    "owner": "kakenbutter"
+  }
+}
