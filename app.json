@@ -3,7 +3,7 @@
     "name": "flashy",
     "description": "Just a silly flashcard app",
     "slug": "flashy",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "orientation": "portrait",
     "icon": "./assets/images/ios-light.png",
     "scheme": "flashy",
