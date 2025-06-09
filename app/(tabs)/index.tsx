@@ -9,7 +9,7 @@ import {
 import { Link, useRouter } from "expo-router";
 import { Image } from "expo-image";
 import { Directory, File, Paths } from "expo-file-system/next";
-import { deleteItemAsync, getItemAsync, setItemAsync } from "expo-secure-store";
+import { getItemAsync, setItemAsync } from "expo-secure-store";
 
 import { ThemedText } from "@/components/ThemedText";
 import { IconSymbol } from "@/components/ui/IconSymbol";

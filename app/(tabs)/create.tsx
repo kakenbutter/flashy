@@ -18,7 +18,6 @@ import { useActionSheet } from "@expo/react-native-action-sheet";
 import { Image } from "expo-image";
 import { File, Paths } from "expo-file-system/next";
 import { useRouter } from "expo-router";
-import { deleteItemAsync } from "expo-secure-store";
 
 export default function Create() {
   const backgroundColor = useThemeColor({}, "background");
@@ -61,14 +60,14 @@ export default function Create() {
               if (title.length === 0 || title.trim().length === 0) {
                 toast({
                   preset: "error",
-                  title: "Error",
+                  title: Platform.OS === "ios" ? "Error" : "Invalid title",
                   message: "Invalid title",
                   duration: 2,
                 });
               } else if (cards.length === 0) {
                 toast({
                   preset: "error",
-                  title: "Error",
+                  title: Platform.OS === "ios" ? "Error" : "At least one card required",
                   message: "At least one card required",
                   duration: 2,
                 });
@@ -79,14 +78,14 @@ export default function Create() {
               ) {
                 toast({
                   preset: "error",
-                  title: "Error",
+                  title: Platform.OS === "ios" ? "Error" : "Invalid card text",
                   message: "Invalid card text",
                   duration: 2,
                 });
               } else {
                 toast({
                   preset: "done",
-                  title: "Success",
+                  title: Platform.OS === "ios" ? "Success" : "Deck created",
                   message: "Deck created",
                   duration: 2,
                 });
@@ -114,7 +113,7 @@ export default function Create() {
                 } catch {
                   toast({
                     preset: "error",
-                    title: "Error",
+                    title: Platform.OS === "ios" ? "Error" : "Something went wrong",
                     message: "Something went wrong",
                     duration: 2,
                   });

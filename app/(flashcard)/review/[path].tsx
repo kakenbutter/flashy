@@ -7,7 +7,6 @@ import { getItem, setItem } from "expo-secure-store";
 import { useState } from "react";
 import {
   StyleSheet,
-  Platform,
   Pressable,
   View,
   SafeAreaView,

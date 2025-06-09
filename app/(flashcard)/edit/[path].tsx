@@ -68,14 +68,14 @@ export default function Edit() {
               if (title.length === 0 || title.trim().length === 0) {
                 toast({
                   preset: "error",
-                  title: "Error",
+                  title: Platform.OS === "ios" ? "Error" : "Invalid title",
                   message: "Invalid title",
                   duration: 2,
                 });
               } else if (cards.length === 0) {
                 toast({
                   preset: "error",
-                  title: "Error",
+                  title: Platform.OS === "ios" ? "Error" : "At least one card required",
                   message: "At least one card required",
                   duration: 2,
                 });
@@ -86,14 +86,14 @@ export default function Edit() {
               ) {
                 toast({
                   preset: "error",
-                  title: "Error",
+                  title: Platform.OS === "ios" ? "Error" : "Invalid card text",
                   message: "Invalid card text",
                   duration: 2,
                 });
               } else {
                 toast({
                   preset: "done",
-                  title: "Success",
+                  title: Platform.OS === "ios" ? "Success" : "Deck edited",
                   message: "Deck edited",
                   duration: 2,
                 });
@@ -118,7 +118,7 @@ export default function Edit() {
                 } catch {
                   toast({
                     preset: "error",
-                    title: "Error",
+                    title: Platform.OS === "ios" ? "Error" : "Something went wrong",
                     message: "Something went wrong",
                     duration: 2,
                   });

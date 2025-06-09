@@ -78,7 +78,7 @@ export default function FlashcardScreen() {
                     new File(Paths.document, path).delete();
                     toast({
                       preset: "done",
-                      title: "Success",
+                      title: Platform.OS === "ios" ? "Success" : "Deck deleted",
                       message: "Deck deleted",
                       duration: 2,
                     });
@@ -86,7 +86,7 @@ export default function FlashcardScreen() {
                   } catch {
                     toast({
                       preset: "error",
-                      title: "Error",
+                      title: Platform.OS === "ios" ? "Error" : "Something went wrong",
                       message: "Something went wrong",
                       duration: 2,
                     });
