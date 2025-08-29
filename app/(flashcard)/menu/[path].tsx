@@ -5,6 +5,7 @@ import {
   StyleSheet,
   View,
   SafeAreaView,
+  useColorScheme,
 } from "react-native";
 import { Link, Stack, useLocalSearchParams, useRouter } from "expo-router";
 
@@ -13,7 +14,6 @@ import { useThemeColor } from "@/hooks/useThemeColor";
 import { IconSymbol } from "@/components/ui/IconSymbol";
 import { Image } from "expo-image";
 import { BlurView } from "expo-blur";
-import { useColorScheme } from "@/hooks/useColorScheme";
 import { File, Paths } from "expo-file-system/next";
 import { toast } from "burnt";
 

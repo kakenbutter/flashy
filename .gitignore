@@ -8,6 +8,7 @@ node_modules/
 dist/
 web-build/
 expo-env.d.ts
+eas.json
 
 # Native
 .kotlin/
@@ -49,5 +50,3 @@ ios/
 
 # bun
 bun.lock
-
-app-example

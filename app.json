@@ -53,7 +53,15 @@
         }
       ],
       "expo-secure-store",
-      ["expo-asset", { "assets": ["assets/images/adaptive_icon.png"] }]
+      [
+        "expo-asset",
+        {
+          "assets": [
+            "assets/images/adaptive_icon.png"
+          ]
+        }
+      ],
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true
