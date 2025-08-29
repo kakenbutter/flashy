@@ -59,7 +59,13 @@
           "assets": ["assets/images/adaptive_icon.png"]
         }
       ],
-      "expo-web-browser"
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Let flashy access your camera",
+          "photosPermission": "Let flashy access your photos"
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true

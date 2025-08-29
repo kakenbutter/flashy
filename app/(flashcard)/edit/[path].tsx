@@ -211,7 +211,7 @@ export default function Edit() {
                     color: iconColor,
                   }}
                 >
-                  A description for your deck
+                  Description for your deck
                 </ThemedText>
                 <ThemedText
                   style={{

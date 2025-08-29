@@ -18,7 +18,7 @@ export default function Onboarding() {
       title: "Example deck",
       description:
         "An example deck to test out the app, featuring definitions for the 10 most commonly used nouns in the English language! Definitions taken from dictionary.com",
-      image: "adaptive-icon",
+      image: "adaptive_icon",
       aspect: "1024/1024",
       cards: [
         {
