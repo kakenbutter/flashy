@@ -56,9 +56,7 @@
       [
         "expo-asset",
         {
-          "assets": [
-            "assets/images/adaptive_icon.png"
-          ]
+          "assets": ["assets/images/adaptive_icon.png"]
         }
       ],
       "expo-web-browser"

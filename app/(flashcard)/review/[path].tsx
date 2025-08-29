@@ -5,12 +5,7 @@ import { File, Paths } from "expo-file-system/next";
 import { Stack, useLocalSearchParams } from "expo-router";
 import { getItem, setItem } from "expo-secure-store";
 import { useState } from "react";
-import {
-  StyleSheet,
-  Pressable,
-  View,
-  SafeAreaView,
-} from "react-native";
+import { StyleSheet, Pressable, View, SafeAreaView } from "react-native";
 import Animated, {
   runOnJS,
   useAnimatedStyle,

@@ -75,7 +75,10 @@ export default function Edit() {
               } else if (cards.length === 0) {
                 toast({
                   preset: "error",
-                  title: Platform.OS === "ios" ? "Error" : "At least one card required",
+                  title:
+                    Platform.OS === "ios"
+                      ? "Error"
+                      : "At least one card required",
                   message: "At least one card required",
                   duration: 2,
                 });
@@ -118,7 +121,8 @@ export default function Edit() {
                 } catch {
                   toast({
                     preset: "error",
-                    title: Platform.OS === "ios" ? "Error" : "Something went wrong",
+                    title:
+                      Platform.OS === "ios" ? "Error" : "Something went wrong",
                     message: "Something went wrong",
                     duration: 2,
                   });

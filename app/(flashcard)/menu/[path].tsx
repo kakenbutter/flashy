@@ -86,7 +86,10 @@ export default function FlashcardScreen() {
                   } catch {
                     toast({
                       preset: "error",
-                      title: Platform.OS === "ios" ? "Error" : "Something went wrong",
+                      title:
+                        Platform.OS === "ios"
+                          ? "Error"
+                          : "Something went wrong",
                       message: "Something went wrong",
                       duration: 2,
                     });

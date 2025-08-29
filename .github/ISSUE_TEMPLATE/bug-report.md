@@ -1,16 +1,16 @@
 ---
 name: Bug Report
 about: Create a bug report to help us improve
-title: 'bug: '
+title: "bug: "
 labels: bug
 assignees: kakenbutter
-
 ---
 
 **Provide Environment Information**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - App Version [e.g. v1.0.2]
+
+- Device: [e.g. iPhone6]
+- OS: [e.g. iOS8.1]
+- App Version [e.g. v1.0.2]
 
 **Describe the bug**
 A clear and concise description of what the bug is, including what you expected to happen when encountering it.
